@@ -8,6 +8,7 @@ multi-ecosystem-groups:
 
 updates:
   - package-ecosystem: "bundler"
+    open-pull-requests-limit: 0
     directories:
       - "/updater"
       - "/"
@@ -38,6 +39,7 @@ updates:
 
   # Watch the per-ecosystem native helpers
   - package-ecosystem: "composer"
+    open-pull-requests-limit: 0
     directories:
       - "/composer/helpers/v2"
     schedule:
@@ -56,12 +58,14 @@ updates:
           - "minor"
           - "patch"
   - package-ecosystem: "devcontainers"
+    open-pull-requests-limit: 0
     directory: "/"
     schedule:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "docker"
+    open-pull-requests-limit: 0
     directories:
       - "/"
       - "/go_modules"
@@ -71,6 +75,7 @@ updates:
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "github-actions"
+    open-pull-requests-limit: 0
     directory: "/"
     schedule:
       interval: "weekly"
@@ -80,18 +85,21 @@ updates:
       all-actions:
         patterns: [ "*" ]
   - package-ecosystem: "gomod"
+    open-pull-requests-limit: 0
     directory: "/go_modules/helpers"
     schedule:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "mix"
+    open-pull-requests-limit: 0
     directory: "/hex/helpers"
     schedule:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "npm"
+    open-pull-requests-limit: 0
     directory: "/npm_and_yarn/helpers"
     schedule:
       interval: "weekly"
@@ -122,6 +130,7 @@ updates:
       - dependency-name: "npm"
         update-types: [ "version-update:semver-major" ]
   - package-ecosystem: "pip"
+    open-pull-requests-limit: 0
     directory: "/python/helpers"
     schedule:
       interval: "weekly"
@@ -150,46 +159,54 @@ updates:
         patterns:
           - poetry
   - package-ecosystem: "pub"
+    open-pull-requests-limit: 0
     directory: "/pub/helpers"
     schedule:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "nuget"
+    open-pull-requests-limit: 0
     directory: "/nuget/helpers/lib/NuGetUpdater"
     schedule:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "dotnet-sdk"
+    open-pull-requests-limit: 0
     directory: "/nuget/helpers/lib/NuGetUpdater"
     schedule:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "gitsubmodule"
+    open-pull-requests-limit: 0
     directory: "/"
     schedule:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "maven"
+    open-pull-requests-limit: 0
     directory: "/maven/lib/dependabot/maven/"
     schedule:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "docker"
+    open-pull-requests-limit: 0
     directory: "/maven"
     schedule:
       interval: "weekly"
       day: "sunday"
       time: "16:00"
   - package-ecosystem: "docker"
+    open-pull-requests-limit: 0
     directory: "/uv"
     multi-ecosystem-group: "uv-ecosystem"
     patterns: ["*"]
   - package-ecosystem: "pip"
+    open-pull-requests-limit: 0
     directory: "/uv/helpers"
     multi-ecosystem-group: "uv-ecosystem"
     patterns: ["*"]
